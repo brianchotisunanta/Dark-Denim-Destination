@@ -1,0 +1,146 @@
+<h1 class="text-center">Check Out</h1>
+
+<div class="check-out-form">
+  <div class="column1 col-md-8">
+
+    <div class="customer-info">
+      <h3>Shipping and Billing Address</h3>
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputFirstName">First Name</label>
+      <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" ng-model="firstName">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputLastName">Last Name</label>
+      <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" ng-model="lastName">
+    </div>
+
+    <div class="form-group col-md-12">
+      <label for="inputAddress1">Address 1</label>
+      <input type="text" class="form-control" id="inputAddress1" placeholder="Street Number Street Name" ng-model="address1">
+    </div>
+
+    <div class="form-group col-md-12">
+      <label for="inputAddress2">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apt,Suit,Unit" ng-model="address2">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="City" ng-model="city">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <input type="text" class="form-control" id="inputState" placeholder="State" ng-model="state">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="inputZip">Zipcode</label>
+      <input type="text" class="form-control" id="inputZip" placeholder="90210" ng-model="zipcode">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputEmailAddress">Email address</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email" ng-model="email">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputPassword">Password</label>
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="password">
+    </div>
+
+<!-- use an ng-show & ng-hide -->
+    <div class="text-center">
+      <label>Same as Shipping Address</label>
+      <input type="checkbox">
+    </div>
+
+    <div>
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="inputPhoneNumber">Phone Number</label>
+        <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="777-777-7777" ng-model="phoneNumber">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="inputEmailAddress">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="your_Email@gmail.com" ng-model="email">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputConfirmEmail">Confirm Email</label>
+        <input type="email" class="form-control" id="inputConfirmEmail" placeholder="your_Email@gmail.com">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="column2 col-md-4">
+    <div class="contact-info">
+      <h3>Payment Info/Method</h3>
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputPromoCode">Promo Code</label>
+      <input type="text" class="form-control" placeholder="">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputGiftCard">Gift Card</label>
+      <input type="text" class="form-control" placeholder="">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="inputCreditCard">Card Number</label>
+      <input type="text" class="form-control" placeholder="1234-1234-1234-1234" ng-model="cardNumber">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="Expiration Date">Expiration Date</label>
+      <input type="text" class="form-control" placeholder="mm-yy" ng-model="cardExpDate">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="Security Code">Security Code</label>
+      <input type="text" class="form-control" placeholder="" ng-model="cardSecurityCode">
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-default btn-primary btn-block" ng-click="submitButtonCheckout">Submit</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- customer card -->
+
+<div class="row customerSection col-md-12">
+  <div class="customerContainer col-md-3" ng-repeat="customer in customers | filter: customerSearch">
+
+    <div class="customerHeader">
+      <h1 class="customerHeading"> {{ customer.firstName }} {{ customer.lastName }} </h1>
+    </div>
+
+    <div class="customerBody">
+      <p><strong>Address 1:</strong> {{ customer.address1 }} </p>
+      <p><strong>Address 2:</strong> {{ customer.address2 }} </p>
+      <p><strong>City:</strong> {{ customer.city }} </p>
+      <p><strong>State:</strong> {{ customer.state }} </p>
+      <p><strong>Zip:</strong> {{ customer.zip }} </p>
+      <p><strong>Phone:</strong> {{ customer.phoneNumber }} </p>
+      <p><strong>Email:</strong> {{ customer.email }} </p>
+
+      <button class="btn btn-info" ng-click="editCustomer(customer)">Edit</button>
+      <button class="btn btn-danger" ng-click="deleteCustomer(customer)">Delete</button>
+    </div>
+  </div>
+</div>

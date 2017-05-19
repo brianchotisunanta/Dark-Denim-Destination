@@ -1,0 +1,218 @@
+/*CSS reset/clear*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 70px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+
+/************************************ index.html ************************************/
+.main-content {
+    margin-top: 150px; /*pushes down content so it's not hiding behind nav bar */
+}
+
+#logo2 {
+  width: 200px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-bottom: 20px solid #730400;
+  background-color: #0C0C0C;
+}
+
+.navbar, .navbar-default {
+  width: 100%;
+  /*background-color: white;*/
+}
+
+.navbar-nav > li {
+font-size: 20px;
+margin-top: 15px;
+}
+
+.button-login {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 10px;
+}
+
+.jumbotron {
+  background-color: #0C0C0C;
+  color: white;
+  margin-bottom: 0;
+}
+
+.home-main-p {
+  padding: 0 20px;
+}
+
+.home-main-heading {
+  font-size: 80px;
+  padding-left: 20px;
+}
+
+.section-p {
+  font-size: 25px;
+  padding: 0 20px;
+}
+/*.navbar-form, .navbar-right {
+  width: 500px;
+}*/
+
+#nav-shopping-bag {
+  background-color: white;
+  width: 0px;
+  height: 80px;
+}
+
+#shopping-bag {
+  width: 60px;
+  border-radius: 10px;
+}
+
+
+/*********************************** home.html ***********************************/
+
+/*.main-image {
+  background: url("");
+}*/
+
+#first-home-p {
+    padding-top: 20px;
+}
+
+.imgWhoWeAre {
+  background: url("../images/background_image3.jpg");
+  /* ( ../ pathway ) because it's in relation to styles.css (which is in css folder)*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 40vw;
+}
+
+.imgWhatWeDo {
+  background: url("../images/background_image2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 40vw;
+}
+
+.imgWhyWeDoIt {
+  background: url("../images/background_image1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 40vw;
+}
+
+.footer {
+  color: #dedede;
+  background-color: #0C0C0C;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.footer-sub {
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+
+/************************************ choose_your_denim.html ************************************/
+
+.choose-your-denim-img {
+  width: 200px;
+  margin: 0 27px 20px 27px;
+}
+
+.denim-block {
+  /*float: left;*/
+  padding: 10px;
+  /*background-color: yellow;*/       /* used as a guide*/
+  /*border: 5px solid black;          /* used as a guide*/
+}
+
+.denim-description {
+  text-align: center;
+}
+
+#shopping-bag-container {
+  padding: 10px;
+  width: 77%;
+}
+
+
+
+
+/************************************ shopping_bag.html ************************************/
+
+/*.shopping-bag-background {
+  background: url("../images/background_image3.jpg");
+}*/
+
+#items-in-bag-h3 {
+  margin: 20px;
+}
+
+/*.item-image {
+  width: 200px;
+}*/
+
+.item-image-in-shopping-bag {
+  width: 200px;
+}
+
+.item-in-bag-buttons > button {
+    margin-right: 20px;
+}
+
+.items-in-bag {
+  margin: 20px;
+  width: 70%;
+  border: 5px solid black;
+  padding: 10px;
+  /*float: left;*/
+  border-radius: 10px;
+
+}
+
+.item-info {
+  /*float: left*/
+  height: 400px;
+  font-size: 25px;
+}
+
+.bag-summary {
+  margin: 20px;
+  width: 25%;
+  border: 5px solid black;
+  padding: 10px;
+  /*float: right;*/
+  border-radius: 10px;
+}
+
+#item-image-shopppingbag {
+  width: 250px;
+}
+
+.button-checkout {
+  /*background-color: #00009A;
+  color: #FFF;*/
+}
+
+p > strong > input {
+  width: 50px;
+}
+
+
+
+/************************************ check_out.html ************************************/

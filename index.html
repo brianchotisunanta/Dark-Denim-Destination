@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dddShopApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dark Denim Destination Denim Shop</title>
+
+                            <!-- Google Font Open-Sans-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+                          <!-- Google Font Shadows Into Light -->
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+                            <!-- Bootstrap CDN 3.3.7 -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+                            <!-- Custom CSS -->
+<link rel="stylesheet" href="./css/styles.css">
+
+                            <!-- Angular CDN 1.5.7 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+
+                            <!-- Angular UI Router CDN 0.4.2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header ">
+          <a class="navbar-brand" href="#"><img id="logo2" src="./images/logo2.png"  alt=""></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <!-- <li>
+            <a class="navbar-brand" href="#">
+            <div id="nav-logo-img">
+              <img src="./images/logo.png" alt="">
+            </div>
+            </a>
+          </li> -->
+          <li><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="chooseyourdenim">Choose Your Denim</a></li>
+          <li><a ui-sref="shoppingbag">Shopping Bag</a></li>
+          <li><a ui-sref="checkout">Check Out</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+              <button class="button-login btn btn-lg active">Sign Up</button>
+            <div id="nav-shopping-bag" style="display:inline;">
+              <!-- <button class="button-login btn btn-lg">Shopping Bag</button> -->
+              <a ui-sref="shoppingbag"><img id="shopping-bag" src="./images/shoppingbag.png" alt=""></a>
+
+            </div>
+        </form>
+      </div>
+       <!-- /.navbar-collapse -->
+    </div>
+     <!-- /.container-fluid -->
+  </nav>
+
+
+<div class="main-content">
+    <div ui-view>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                                <!-- Module -->
+<script type="text/javascript" src="./app.js"></script>
+
+                                <!-- Services -->
+  <script type="text/javascript" src="./services/chooseYourDenimService.js"></script>
+  <script type="text/javascript" src="./services/checkOutService.js"></script>
+  <script type="text/javascript" src="./services/shoppingBagService.js"></script>
+
+
+                                <!-- Controllers -->
+  <script type="text/javascript" src="./controllers/homeController.js"></script>
+  <script type="text/javascript" src="./controllers/chooseYourDenimController.js"></script>
+  <script type="text/javascript" src="./controllers/checkOutController.js"></script>
+  <script type="text/javascript" src="./controllers/shoppingBagController.js"></script>
+
+</body>
+</html>
