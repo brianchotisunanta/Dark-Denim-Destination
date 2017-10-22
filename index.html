@@ -6,28 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dark Denim Destination Denim Shop</title>
 
-                            <!-- Google Font Open-Sans-->
+<!-- Google Font Open-Sans-->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
-                          <!-- Google Font Shadows Into Light -->
+<!-- Google Font Shadows Into Light -->
 <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
-                            <!-- Bootstrap CDN 3.3.7 -->
+<!-- Bootstrap CDN 3.3.7 -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-                            <!-- Custom CSS -->
+<!-- animate.css -->
+<link rel="stylesheet" href="./css/animate.css">
+
+<!-- Custom CSS -->
 <link rel="stylesheet" href="./css/styles.css">
 
-                            <!-- Angular CDN 1.5.7 -->
+<!-- Angular CDN 1.5.7 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
 
-                            <!-- Angular UI Router CDN 0.4.2 -->
+<!-- Angular UI Router CDN 0.4.2 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
 
 
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-static-top navbar-fixed-top animated bounceInRight">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header ">
@@ -53,7 +56,7 @@
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
             </div>
-              <button class="button-login btn btn-lg active">Sign Up</button>
+            <button class="button-login btn btn-lg active">Sign Up</button>
             <div id="nav-shopping-bag" style="display:inline;">
               <!-- <button class="button-login btn btn-lg">Shopping Bag</button> -->
               <a ui-sref="shoppingbag"><img id="shopping-bag" src="./images/shoppingbag.png" alt=""></a>
@@ -72,24 +75,15 @@
 
     </div>
 </div>
-
-
-
-
-
-
-
-
-                                <!-- Module -->
+<!-- Module -->
 <script type="text/javascript" src="./app.js"></script>
 
-                                <!-- Services -->
+<!-- Services -->
   <script type="text/javascript" src="./services/chooseYourDenimService.js"></script>
   <script type="text/javascript" src="./services/checkOutService.js"></script>
   <script type="text/javascript" src="./services/shoppingBagService.js"></script>
 
-
-                                <!-- Controllers -->
+<!-- Controllers -->
   <script type="text/javascript" src="./controllers/homeController.js"></script>
   <script type="text/javascript" src="./controllers/chooseYourDenimController.js"></script>
   <script type="text/javascript" src="./controllers/checkOutController.js"></script>

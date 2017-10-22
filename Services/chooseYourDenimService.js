@@ -4,7 +4,10 @@ angular
 
       var _denims = [];
 
-      var Denim = function(name, price, style, image, smallSize, bigSize, smallQuantity, largeQuantity, color) {
+      var _denimsId = [];
+
+      var Denim = function(id, name, price, style, image, smallSize, bigSize, smallQuantity, largeQuantity, color) {
+        this.id = id;
         this.name = name;
         this.price = price;
         this.style = style;
