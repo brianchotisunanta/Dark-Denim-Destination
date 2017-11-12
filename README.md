@@ -1,5 +1,19 @@
 Dark Denim Destination
 
+./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.42.08 AM.png
+
+./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.42.39 AM.png
+
+./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.42.47 AM.png
+
+./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.28 AM.png
+
+./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.48 AM.png
+
+./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.54 AM.png
+
+./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.58 AM.png
+
 I designed an online store, called Dark Denim Destination, that specializes in selling men's black denim.
 
 This is my first project at Redwood Code Academy that shows what we learned during the first month of the bootcamp, focusing on front-end development.

@@ -39,9 +39,9 @@ angular
     }
 
 // Not Working
-    this.addCustomer = function(firstName, lastName, address1, address2, city, state, zipcode, email, password, phoneNumber, cardNumber, cardExpirationDate, cardSecurityCode) {
+    this.addCustomer = function(id++, firstName, lastName, address1, address2, city, state, zipcode, email, password, phoneNumber, cardNumber, cardExpirationDate, cardSecurityCode) {
 
-      _customers.unshift(new Customer (firstName, lastName, address1, address2, city, state, zipcode, email, password, phoneNumber, cardNumber, cardExpirationDate, cardSecurityCode))
+      _customers.unshift(new Customer (id++, firstName, lastName, address1, address2, city, state, zipcode, email, password, phoneNumber, cardNumber, cardExpirationDate, cardSecurityCode))
     }
 
 
