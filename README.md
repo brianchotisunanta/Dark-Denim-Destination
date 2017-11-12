@@ -1,5 +1,11 @@
 # Dark Denim Destination
 
+### This is my first project at Redwood Code Academy.
+
+### This is a front-end application only.
+
+I designed an online store, called Dark Denim Destination, that specializes in selling men's black denim, that shows what we learned during the first month of the bootcamp, focusing on front-end development.
+
 <img width="1718" alt="screen shot 2017-10-22 at 3 42 08 am" src="https://user-images.githubusercontent.com/24735848/32697098-47d1fd8c-c73d-11e7-81da-031a6c45f5b8.png">
 
 <img width="1718" alt="screen shot 2017-10-22 at 3 42 47 am" src="https://user-images.githubusercontent.com/24735848/32697101-539ca40a-c73d-11e7-9242-3d8240829b73.png">
@@ -14,21 +20,14 @@
 
 <img width="1718" alt="screen shot 2017-10-22 at 3 43 58 am" src="https://user-images.githubusercontent.com/24735848/32697107-62e60cbc-c73d-11e7-9700-54e030932e26.png">
 
-
-I designed an online store, called Dark Denim Destination, that specializes in selling men's black denim.
-
-This is my first project at Redwood Code Academy that shows what we learned during the first month of the bootcamp, focusing on front-end development.
-
-After the project was completed, I pushed the entire project to github.
-
-## The technologies that I used:
-### • HTML5
-### • CSS3
-### • JavaScript
-### • AngularJS (Directives, Module, Controllers, Services)
-### • Angular UI Router
-### • Google Font Open Sans & Shadows Into Light
-### • Bootstrap
+## Technologies:
+#### •HTML5
+#### • CSS3
+#### • JavaScript
+#### • AngularJS (Directives, Module, Controllers, Services)
+#### • Angular UI Router
+#### • Google Font Open Sans & Shadows Into Light
+#### • Bootstrap
 
 
 I created an index.html, custom css file, app.js, three views html files, four controllers javascript files, and three services javascript files.
