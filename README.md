@@ -1,4 +1,4 @@
-Dark Denim Destination
+# Dark Denim Destination
 
 ./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.42.08 AM.png
 
@@ -13,6 +13,21 @@ Dark Denim Destination
 ./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.54 AM.png
 
 ./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.58 AM.png
+
+<img width="1718" alt="screen shot 2017-10-22 at 3 42 08 am" src="https://user-images.githubusercontent.com/24735848/32697098-47d1fd8c-c73d-11e7-81da-031a6c45f5b8.png">
+
+<img width="1718" alt="screen shot 2017-10-22 at 3 42 47 am" src="https://user-images.githubusercontent.com/24735848/32697101-539ca40a-c73d-11e7-9242-3d8240829b73.png">
+
+<img width="1718" alt="screen shot 2017-10-22 at 3 42 39 am" src="https://user-images.githubusercontent.com/24735848/32697099-4aae9c90-c73d-11e7-8fde-abdbd7292801.png">
+
+<img width="1690" alt="screen shot 2017-10-22 at 3 43 28 am" src="https://user-images.githubusercontent.com/24735848/32697104-623141e2-c73d-11e7-954f-4ce948abda35.png">
+
+<img width="1718" alt="screen shot 2017-10-22 at 3 43 48 am" src="https://user-images.githubusercontent.com/24735848/32697105-624a501a-c73d-11e7-9f7b-eb6c7f95a919.png">
+
+<img width="1718" alt="screen shot 2017-10-22 at 3 43 54 am" src="https://user-images.githubusercontent.com/24735848/32697106-62688ad0-c73d-11e7-86f5-795366458888.png">
+
+<img width="1718" alt="screen shot 2017-10-22 at 3 43 58 am" src="https://user-images.githubusercontent.com/24735848/32697107-62e60cbc-c73d-11e7-9700-54e030932e26.png">
+
 
 I designed an online store, called Dark Denim Destination, that specializes in selling men's black denim.
 
@@ -39,19 +54,19 @@ The controller folder contains angularjs files that are associated with the view
 
 In the index.html, I used the "Shadows into light" font from Google Fonts throughout the entire site. I also used Bootstrap, Animate.css file for css animations, Angular CDN 1.5.7, and Angular UI Router CDN 0.4.2.
 
-Index.html File:
+### Index.html File:
 
 The index.html file contains the navigation bar code, with the associated ui-source references for all the html view files.
 
-Custom CSS File:
+### Custom CSS File:
 
 The custom css file is in the css folder, under the file name "styles.css" This is were all my added css is located.
 
-App.js File:
+### App.js File:
 
 The app.js file contains the angular module, called "dddShopApp" and utilizes the ui-router. Under $StateProvider, I created four states, each one for the html view files.
 
-Views Files:
+### Views Files:
 
 The home.html file contains the stores main home page. I've included a jumbotron from bootstrap, with three paragraphs that I filed in with "lorem ipsum." I created three sections for the home page that are titled "Who We Are", "What We Do", and "Why We Do It" that includes an image for each section with "lorem ipsum" paragraphs as fill-ins. I also included a footer section on the bottom of the page to include the title of the site and the year it was designed. I also included my name to show that I designed the site. Most importantly, I included a message claiming no ownership for the images that I used, to avoid any kind of legalities.
 
@@ -61,7 +76,7 @@ The shopping_bag.html also utilizes Angular ng-repeat and expressions {{ }}. I c
 
 The check_out.html contains the customer info fill-in forms that ask for the customer's first name, last last, address1, address2, city, state, zip, email, password, credit card number, card expiration date, and card security code. I also created a customer card with a div container that uses ng-repeat to add multiple customers and, to see the each customer's information displayed on the screen.
 
-Services Files:
+### Services Files:
 
 The chooseYourDenimService.js file contains the angular module "dddShopApp" and the service "chooseYourDenimService." It contains the denim array, the denim contructor function, and the 12 denim properties pushed into the denim array.
 
@@ -78,7 +93,7 @@ The checkOutService.js file contains the angular module "dddShopApp" and the ser
 It contains the getCustomers function to return customers.
 (talk about button functions here!!!)
 
-Controller Files:
+### Controller Files:
 
 The homeController.js file contains the angular module "dddShopApp" and the controller name "homeController", with a function as a $scope parameter. This is to link the home view with the home controller via $scope.
 
