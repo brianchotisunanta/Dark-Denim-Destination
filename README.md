@@ -1,19 +1,5 @@
 # Dark Denim Destination
 
-./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.42.08 AM.png
-
-./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.42.39 AM.png
-
-./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.42.47 AM.png
-
-./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.28 AM.png
-
-./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.48 AM.png
-
-./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.54 AM.png
-
-./darkdenimdest images ss/Screen Shot 2017-10-22 at 3.43.58 AM.png
-
 <img width="1718" alt="screen shot 2017-10-22 at 3 42 08 am" src="https://user-images.githubusercontent.com/24735848/32697098-47d1fd8c-c73d-11e7-81da-031a6c45f5b8.png">
 
 <img width="1718" alt="screen shot 2017-10-22 at 3 42 47 am" src="https://user-images.githubusercontent.com/24735848/32697101-539ca40a-c73d-11e7-9242-3d8240829b73.png">
