@@ -21,9 +21,15 @@ This is my first project at Redwood Code Academy that shows what we learned duri
 
 After the project was completed, I pushed the entire project to github.
 
-The technologies that I used are HTML5, CSS3, and JavaScript. I used Angularjs as the front-end framework for my site.
+## The technologies that I used:
+### • HTML5
+### • CSS3
+### • JavaScript
+### • AngularJS (Directives, Module, Controllers, Services)
+### • Angular UI Router
+### • Google Font Open Sans & Shadows Into Light
+### • Bootstrap
 
-With Angularjs, I used views, services, controllers, and ui-routers.
 
 I created an index.html, custom css file, app.js, three views html files, four controllers javascript files, and three services javascript files.
 
