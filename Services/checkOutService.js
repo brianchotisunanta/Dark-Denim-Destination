@@ -46,9 +46,9 @@ angular
 
 
 // Not Working
-    this.editCustomer = function(currentCustomer, firstName, lastName, address1, address2, city, state, zipcode, email, password, phoneNumber, cardNumber, cardExpirationDate, cardSecurityCode) {
+    this.updateCustomer = function(currentCustomer, firstName, lastName, address1, address2, city, state, zipcode, email, password, phoneNumber, cardNumber, cardExpirationDate, cardSecurityCode) {
 
-      _customers.splice(currentCustomer, 1, new Customer(cfirstName, lastName, address1, address2, city, state, zipcode, email, password, phoneNumber, cardNumber, cardExpirationDate, cardSecurityCode))
+      _customers.splice(currentCustomer, 1, new Customer(id, firstName, lastName, address1, address2, city, state, zipcode, email, password, phoneNumber, cardNumber, cardExpirationDate, cardSecurityCode))
     }
 
 

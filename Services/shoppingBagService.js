@@ -1,6 +1,6 @@
 angular
     .module("dddShopApp")
-    .service("shoppingBagService", function() {
+    .service("shoppingBagService", function(chooseYourDenimService) {
 
       var _shoppingBag = [];
 
@@ -20,7 +20,7 @@ angular
 
 
 
-      this.editShopBagItems = function(denim) {
+      this.updateShopBagItems = function(denim) {
         currentDenimInShopBag = i;
         _shoppingBag.splice(i, 1, new Denim(name, price, style, image, smallSize, bigSize, smallQuantity, largeQuantity, color))
       }
@@ -43,5 +43,6 @@ angular
         return (denim.price) * 0.0775
       }
 
+//I think I just need one service file!!!
 
 })

@@ -8,12 +8,12 @@
       <img src=" {{denim.image}} " class="choose-your-denim-img">
     </div>
     <div class="denim-description" >
-      <h4><strong>{{denim.name}}</strong></h5>
-      <p><strong>Price :</strong> ${{denim.price}}</p>
-      <p><strong>Color:</strong> {{denim.color}}</p>
+      <h4 id="denim-name"><strong> {{denim.name}} </strong></h5>
+      <p id="denim-price">Price: <span>$ {{denim.price}} </span></p>
+      <p id="denim-color">Color: <span> {{denim.color}} </span></p>
     </div>
     <div class="text-center">
-      <button class="btn btn-info btn-sm" type="button" ng-click="addToBag(denim)">Add to Bag</button>
+      <button class="btn btn-info btn-sm" id="btnAddToBag" type="button" ng-click="addToBag(denim)">Add to Bag</button>
     </div>
   </div>
 

@@ -17,14 +17,13 @@
         <!-- <p><Strong>Quantity:</Strong> {{denim.smallQuantity}} - {{denim.largeQuantity}} </p> -->
         <p><Strong>Size: {{ denim.smallSize }} - {{ denim.bigSize }} <input type="number" ></input></Strong><p>
         <p><Strong>Color:</Strong> {{ denim.color }} </p>
-      </div>
         <!-- Not showing fix this!!! There is an ng-hide here -->
-      <div class="item-in-bag-buttons col-md-12">
-        <!-- <h1>Test</h1> -->
-        <button class="button-checkout btn btn-info btn-lg active pull-right" ng-click="editShopBagItems()" ng-show="buttonEdit">Edit</button>
-
-        <button class="button-checkout btn btn-danger btn-lg active pull-right" ng-click="removeShopBagItems()" ng-show="buttonRemove">Remove</button>
+        <div class="item-in-bag-buttons">
+          <button class="button-checkout btn btn-info btn-lg active" ng-click="updateShopBagItems()" ng-show="buttonEdit">Edit</button>
+          <button class="button-checkout btn btn-danger btn-lg active" ng-click="removeShopBagItems()" ng-show="buttonRemove">Remove</button>
+        </div>
       </div>
+
     </div>
   </div>
 

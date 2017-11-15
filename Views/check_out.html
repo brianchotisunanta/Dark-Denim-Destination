@@ -1,7 +1,9 @@
 <h1 class="text-center">Check Out</h1>
 
-<div class="check-out-form">
-  <div class="column1 col-md-8">
+<div class="check-out-form" id="check-out">
+
+<!-- Shipping and Billing Address -->
+  <div class="col-md-6 col-md-offset-3">
 
     <div class="customer-info">
       <h3>Shipping and Billing Address</h3>
@@ -79,11 +81,8 @@
     </div>
   </div>
 
-
-
-
-
-  <div class="column2 col-md-4">
+<!-- Payment Info/Method -->
+  <div class="col-md-6 col-md-offset-3">
     <div class="contact-info">
       <h3>Payment Info/Method</h3>
     </div>
@@ -114,7 +113,7 @@
     </div>
 
     <div class="text-center">
-      <button type="submit" class="btn btn-default btn-primary btn-block" ng-click="submitButtonCheckout">Submit</button>
+      <button type="submit" class="btn btn-default btn-primary btn-block" id="submitButtonCheckout" ng-click="submitButtonCheckout">Submit</button>
     </div>
   </div>
 </div>
@@ -122,7 +121,6 @@
 
 
 <!-- customer card -->
-
 <div class="row customerSection col-md-12">
   <div class="customerContainer col-md-3" ng-repeat="customer in customers | filter: customerSearch">
 

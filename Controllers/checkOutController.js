@@ -5,7 +5,21 @@ angular
     $scope.customers = checkOutService.getCustomers();
 
     $scope.addCustomer = function() {
-      checkOutService.addCustomer($scope.firstName, $scope.lastName, $scope.address1, $scope.address2, $scope.city, $scope.state, $scope.zipcode, $scope.email, $scope.password, $scope.phoneNumber, $scope.cardNumber, $scope.cardExpirationDate, $scope.securityCode)
+      checkOutService.addCustomer(
+        $scope.id,
+        $scope.firstName,
+        $scope.lastName,
+        $scope.address1,
+        $scope.address2,
+        $scope.city,
+        $scope.state,
+        $scope.zipcode,
+        $scope.email,
+        $scope.password,
+        $scope.phoneNumber,
+        $scope.cardNumber,
+        $scope.cardExpirationDate,
+        $scope.securityCode)
 
       this.firstName = "";
       this.lastName = "";
@@ -33,6 +47,7 @@ angular
 
           currentCustomer = i
 
+          $scope.id = customer.id;
           $scope.firstName = customer.firstName;
           $scope.lastName = customer.lastName;
           $scope.address1 = customer.address1;
@@ -56,7 +71,21 @@ angular
 
 
     $scope.saveCustomer = function() {
-      checkOutService.editCustomer(currentCustomer, $scope.firstName, $scope.lastName, $scope.address1, $scope.address2, $scope.city, $scope.state, $scope.zipcode, $scope.email, $scope.password, $scope.phoneNumber, $scope.cardNumber, $scope.cardExpirationDate, $scope.securityCode)
+      checkOutService.updateCustomer(
+        currentCustomer,
+        $scope.firstName,
+        $scope.lastName,
+        $scope.address1,
+        $scope.address2,
+        $scope.city,
+        $scope.state,
+        $scope.zipcode,
+        $scope.email,
+        $scope.password,
+        $scope.phoneNumber,
+        $scope.cardNumber,
+        $scope.cardExpirationDate,
+        $scope.securityCode)
 
       // hiding save, showing submit
       $scope.submitButton = true;

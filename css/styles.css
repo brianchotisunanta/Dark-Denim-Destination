@@ -6,7 +6,7 @@
 }
 
 body {
-  padding-bottom: 70px;
+  padding-bottom: 0;
   font-family: 'Shadows Into Light', cursive;
 }
 
@@ -18,6 +18,10 @@ body {
 
 #logo2 {
   width: 200px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;    /*makes the navbar list white*/
 }
 
 .navbar {
@@ -124,8 +128,10 @@ margin-top: 15px;
 }
 
 .footer-sub {
+  font-family: 'Open Sans', sans-serif;
   font-size: 10px;
   padding-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 /************************************ choose_your_denim.html ************************************/
@@ -144,6 +150,11 @@ margin-top: 15px;
 
 .denim-description {
   text-align: center;
+
+}
+
+#denim-name {
+  font-size: 30px;
 }
 
 #shopping-bag-container {
@@ -159,6 +170,12 @@ margin-top: 15px;
 /*.shopping-bag-background {
   background: url("../images/background_image3.jpg");
 }*/
+
+#denim-price, #denim-color {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
 
 #items-in-bag-h3 {
   margin: 10px;
@@ -179,7 +196,7 @@ margin-top: 15px;
 .items-in-bag {
   margin: 10px;
   width: 70%;
-  border: 5px solid black;
+  border: 2px solid black;
   padding: 10px;
   /*float: left;*/
   border-radius: 10px;
@@ -195,25 +212,36 @@ margin-top: 15px;
 .bag-summary {
   margin: 10px;
   width: 25%;
-  border: 5px solid black;
+  border: 2px solid black;
   padding: 10px;
   /*float: right;*/
   border-radius: 10px;
 }
 
-#item-image-shopppingbag {
+#item-image-shoppingbag {
   width: 250px;
 }
 
-.button-checkout {
-  /*background-color: #00009A;
-  color: #FFF;*/
+#btnAddToBag {
+  width: 200px;
 }
 
 p > strong > input {
   width: 50px;
 }
 
+.bag-summary>p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 
 
 /************************************ check_out.html ************************************/
+
+#check-out {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#submitButtonCheckout {
+  margin-bottom: 5px;
+}

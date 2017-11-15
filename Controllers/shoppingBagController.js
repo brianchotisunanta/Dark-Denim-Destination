@@ -9,7 +9,7 @@ angular
 
 var currentDenimInShopBag = null;
 
-      $scope.editShopBagItems = function(denim) {
+      $scope.updateShopBagItems = function(denim) {
         for (var i = 0; i < $scope.denims.length; i++) {
           if($scope.denims[i] ==  denim) {
             // setting a var equal to current denim in shop bag so when the customer saves, we know which denim to update
@@ -26,7 +26,6 @@ var currentDenimInShopBag = null;
             $scope.color = denim.color;
           }
         }
-
       }
       $scope.buttonEdit = true;
       $scope.buttonRemove = true;
@@ -37,12 +36,6 @@ var currentDenimInShopBag = null;
         shoppingBagService.removeShopBagItems(denim);
       }
 
-
-
-// Not Working
-    $scope.deleteDenim = function(denim) {
-      shoppingBagService.deleteDenim(denim)
-    }
 
 // Not Working
     $scope.submitButtonCheckout = function() {
