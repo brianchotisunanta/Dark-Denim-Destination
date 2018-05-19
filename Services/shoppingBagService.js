@@ -18,8 +18,6 @@ angular
       }
 
 
-
-
       this.updateShopBagItems = function(denim) {
         currentDenimInShopBag = i;
         _shoppingBag.splice(i, 1, new Denim(name, price, style, image, smallSize, bigSize, smallQuantity, largeQuantity, color))
@@ -27,20 +25,19 @@ angular
 
 
       this.removeShopBagItems = function(denim) {
-
-        _shoppingBag.indexOf(denim) //try this
-
+        // _shoppingBag.indexOf(denim) //try this
         // I don't think you need a loop
         for (var i = 0; i < _shoppingBag.length; i++) {
-          if (_shoppingBag[i] == _denim[i]){
-            splice(i,1);
+          if (_shoppingBag[i] == _denim){
+            _shoppingBag.splice(i,1);
           }
         }
       }
 
 // This is not working
       this.subTotal = function() {
-        return (denim.price) * 0.0775
+        var tax = 0.0775;
+        return (denim.price) * tax;
       }
 
 //I think I just need one service file!!!

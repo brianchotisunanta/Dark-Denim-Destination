@@ -1,6 +1,6 @@
 angular
     .module("dddShopApp")
-    .controller("shoppingBagController", function($scope, shoppingBagService) {
+    .controller("shoppingBagController", function($scope, shoppingBagService, chooseYourDenimService) {
 
       $scope.denims = shoppingBagService.getShoppingBag();
 

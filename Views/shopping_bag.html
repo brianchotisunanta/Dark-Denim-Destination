@@ -12,10 +12,34 @@
         <p><strong>Item Name:</strong> {{ denim.name }} </p>
         <p><strong>Denim Style:</strong> {{ denim.style }} </p>
         <p><Strong>Price:</Strong> $ {{ denim.price }} </p>
-        <p><Strong>Quantity: ( {{denim.smallQuantity}} - {{denim.largeQuantity}} ) <input type="number" ></input>
-        </Strong></p>
+        <p><Strong>Quantity: ( {{denim.smallQuantity}} - {{denim.largeQuantity}} )
+          <span>
+            <select class="dropdownDenimQuantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </span>
+          </Strong>
+        </p>
+
         <!-- <p><Strong>Quantity:</Strong> {{denim.smallQuantity}} - {{denim.largeQuantity}} </p> -->
-        <p><Strong>Size: {{ denim.smallSize }} - {{ denim.bigSize }} <input type="number" ></input></Strong><p>
+        <p>
+          <Strong>Size: {{ denim.smallSize }} - {{ denim.bigSize }}
+            <span>
+              <select class="dropdownDenimSize">
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+              </select>
+            </span>
+          </Strong>
+        <p>
+
         <p><Strong>Color:</Strong> {{ denim.color }} </p>
         <!-- Not showing fix this!!! There is an ng-hide here -->
         <div class="item-in-bag-buttons">

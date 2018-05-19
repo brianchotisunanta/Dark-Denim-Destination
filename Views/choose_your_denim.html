@@ -2,7 +2,6 @@
 
 <!-- Shows the denim items in a row of 4 -->
 <div class="container" id="shopping-bag-container">
-
   <div class="denim-block col-md-3" ng-repeat="denim in denims">
     <div class="choose-your-denim-img">
       <img src=" {{denim.image}} " class="choose-your-denim-img">
@@ -16,5 +15,4 @@
       <button class="btn btn-info btn-sm" id="btnAddToBag" type="button" ng-click="addToBag(denim)">Add to Bag</button>
     </div>
   </div>
-
 </div>
